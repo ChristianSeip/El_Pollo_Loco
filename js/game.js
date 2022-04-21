@@ -41,10 +41,9 @@ window.addEventListener('keydown', (e) => {
         music.play();
     }
 
-    console.log(e.code);
 
     switch(e.code) {
-        case "KeyF":
+        case "KeyA":
             keyboard.SPACE = true;
             break;
         case "ArrowLeft":
@@ -56,6 +55,9 @@ window.addEventListener('keydown', (e) => {
         case "ArrowRight":
             keyboard.RIGHT = true;
             break;
+        case "KeyF":
+            canvas.requestFullscreen();
+            break;
     }
 });
 
@@ -64,7 +66,7 @@ window.addEventListener('keydown', (e) => {
  */
 window.addEventListener('keyup', (e) => {
     switch(e.code) {
-        case "KeyF":
+        case "KeyA":
             keyboard.SPACE = false;
             break;
         case "ArrowLeft":
