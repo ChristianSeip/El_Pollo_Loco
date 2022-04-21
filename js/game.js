@@ -1,22 +1,16 @@
 let canvas, world, screen;
 let keyboard = new Keyboard();
-const music = new Audio('../audio/music.mp3');
+const music = new Audio('../audio/bgmusic.mp3');
 music.loop = true;
+music.volume = 0.2
 let musicIsPlayed = false;
 
-function init() {
+function startGame() {
     screen = document.getElementById('screen');
     canvas = screen.getElementsByTagName('canvas')[0];
-    showStartScreen();
-}
-
-function showStartScreen() {
-    //screen.style.backgroundImage = "url('../img/9.Intro _ Outro Image/Start Screen/Opción2.png')";
-}
-
-function startGame() {
     initLevel();
-    toogleScreen();
+    document.getElementById('game-help').classList.toggle('hide');
+    toggleScreen();
     world = new World(canvas, keyboard);
 }
 
@@ -25,10 +19,11 @@ function endGame() {
     let btn = document.getElementById('btn');
     btn.setAttribute('onclick', 'window.location.reload()');
     btn.innerText = "Back to start";
-    toogleScreen();
+    toggleScreen();
 }
 
-function toogleScreen() {
+function toggleScreen() {
+    document.getElementById('game-help').classList.toggle('hide');
     document.getElementsByClassName('game-menu')[0].classList.toggle('hide');
     canvas.classList.toggle('hide');
 }
