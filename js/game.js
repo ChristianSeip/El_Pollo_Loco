@@ -41,8 +41,10 @@ window.addEventListener('keydown', (e) => {
         music.play();
     }
 
+    console.log(e.code);
+
     switch(e.code) {
-        case "Space":
+        case "KeyF":
             keyboard.SPACE = true;
             break;
         case "ArrowLeft":
@@ -62,7 +64,7 @@ window.addEventListener('keydown', (e) => {
  */
 window.addEventListener('keyup', (e) => {
     switch(e.code) {
-        case "Space":
+        case "KeyF":
             keyboard.SPACE = false;
             break;
         case "ArrowLeft":
