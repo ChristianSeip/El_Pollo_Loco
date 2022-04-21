@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Regular.ttf"),
+    url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    color: rgb(222, 222, 222);
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-image: url("../img/9.Intro _ Outro Image/Start Screen/Opción 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+canvas {
+    background-color: black;
+}
+
+#screen {
+    background-size: cover;
+    background-position-x: -75px;
+    width: 720px;
+    height: 480px;
+}
+
+.game-menu {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 6px 12px;
+    border: unset;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: darkorange;
+    color: rgb(91, 33, 3);
+}
+
+.hide {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(33,33,33,0.3);
+    margin-top: 6px;
+    font-size: 1.2em;
+}
+
+ul li i {
+    color: white;
+    width: 35px;
+    text-align:center;
+    background-color: darkorange;
+}
+
+.arrow-keys {
+}

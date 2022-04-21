@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="models/game-object.class.js"></script>
+    <script src="models/status-bar.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/boss.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/background.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/item.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/bottle.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="js/game.js"></script>
+</head>
+<body onload="init()">
+<div id="screen">
+    <div class="game-menu">
+            <button id="btn" class="btn-primary" onclick="startGame()">Start Game</button>
+        <div>
+            <div class="arrow-keys">
+                <ul>
+                   <li><i class="fa-solid fa-caret-left"></i>Move Left</li>
+                    <li><i class="fa-solid fa-caret-right"></i>Move Right</li>
+                    <li><i class="fa-solid fa-caret-up"></i>Jump</li>
+                    <li><i class="fa-solid fa-f"></i>Attack</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <canvas class="hide" width="720" height="480px"></canvas>
+</div>
+
+</body>
+</html>
